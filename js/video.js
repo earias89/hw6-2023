@@ -44,29 +44,27 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 
-//left off here
 
 document.querySelector("#mute").addEventListener("click", function() {
-    console.log("Mute")
-    if( $("#mute").prop('muted') ) {
-        $("#mute").prop('muted', false);
-        $(this).text('Mute');
-    // or toggle class, style it with a volume icon sprite, change background-position
-  } else {
-    $("mute").prop('muted', true);
-    $(this).text('Unmute');
-  }
+    console.log(video.muted);
+    if (video.muted == false) {
+        video.muted = true
+        this.innerHTML = "Unmute"}
+    else{
+        video.muted = false
+        this.innerHTML = "Mute"}
 });
 
 
 
 document.querySelector("#slider").addEventListener
-("click", function() {
-    console.log(this)
+("change", function() {
+    // console.log(this)
     console.log(this.value)
-    console.log("I am in the slider")
-    // bd = document.querySelector("body")
-    // bd.style.fontsize = this.value + "px"
+    // console.log("I am in the slider")
+    video.volume = this.value/100
+    console.log(video.volume)
+    document.querySelector("#volume").innerHTML = video.volume*100 + "%"
 });
 
 document.querySelector("#vintage").addEventListener

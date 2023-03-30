@@ -1,8 +1,8 @@
-var video;
+video = document.querySelector("#player1")
+
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
-    video = document.querySelector("#player1")
     video.autoplay = false;
     console.log("Autoplay is set to" + video.loop)
     video.loop = false;
@@ -40,7 +40,7 @@ document.querySelector("#skip").addEventListener("click", function() {
     video.currentTime += 15
     if (video.currentTime >= video.duration)
         video.currentTime = 0
-        console.log("Current time is" = video.currentTime)
+        console.log("Current time is" + video.currentTime)
 });
 
 

@@ -25,19 +25,19 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
     console.log("Slow down")
-    video.playbackRate *= 0.95
+    video.playbackRate *= 0.90
     console.log("Playback rate is" + video.playbackRate)
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
     console.log("Speed up")
-    video.playbackRate /= 0.95
+    video.playbackRate /= 0.90
     console.log("Playback rate is" + video.playbackRate)
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
     console.log("Skip ahead")
-    video.currentTime += 15
+    video.currentTime += 10
     if (video.currentTime >= video.duration)
         video.currentTime = 0
         console.log("Current time is" + video.currentTime)
@@ -71,14 +71,14 @@ document.querySelector("#vintage").addEventListener
 ("click", function() {
     console.log("I am in Old School")
     bd = document.querySelector("body")
-    if (bd.classList.contains("oldSchool")){
-        console.log("Adding Old School")
+    // if (bd.classList.contains("oldSchool")){
+        // console.log("Adding Old School")
         bd.classList.remove("oldSchool")
-    }
-    else{
-        console.log("Adding Old School")
-        bd.classList.add("oldSchool")
-    }
+    // }
+    // else{
+    //     console.log("Adding Old School")
+    //     bd.classList.add("oldSchool")
+    // }
 });
 
 
@@ -86,12 +86,12 @@ document.querySelector("#orig").addEventListener
 ("click", function() {
     console.log("I am in Old School")
     bd = document.querySelector("body")
-    if (bd.classList.contains("oldSchool")){
-        console.log("Removing Old School")
-        bd.classList.remove("oldSchool")
-    }
-    else{
-        console.log("Adding Old School")
+    // if (bd.classList.contains("oldSchool")){
+    //     console.log("Removing Old School")
+    //     bd.classList.remove("oldSchool")
+    // }
+    // else{
+    //     console.log("Adding Old School")
         bd.classList.add("oldSchool")
-    }
+    // }
 });

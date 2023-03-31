@@ -70,10 +70,10 @@ document.querySelector("#slider").addEventListener
 document.querySelector("#vintage").addEventListener
 ("click", function() {
     console.log("I am in Old School")
-    bd = document.querySelector("body")
+    // bd = document.querySelector("body")
     // if (bd.classList.contains("oldSchool")){
-        console.log("Adding Old School")
-        bd.classList.add("oldSchool") // remove?
+        // console.log("Adding Old School")
+        video.classList.add("oldSchool") 
     // }
     // else{
     //     console.log("Adding Old School")
@@ -85,13 +85,13 @@ document.querySelector("#vintage").addEventListener
 document.querySelector("#orig").addEventListener
 ("click", function() {
     console.log("I am in Old School")
-    bd = document.querySelector("body")
+    // bd = document.querySelector("body")
     // if (bd.classList.contains("oldSchool")){
     //     console.log("Removing Old School")
     //     bd.classList.remove("oldSchool")
     // }
     // else{
-        console.log("Adding Old School")
-        bd.classList.remove("oldSchool") // add? 
+        // console.log("Adding Old School")
+        video.classList.remove("oldSchool") 
     // }
 });

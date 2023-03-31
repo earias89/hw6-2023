@@ -25,19 +25,19 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
     console.log("Slow down")
-    video.playbackRate *= 0.95
+    video.playbackRate *= 0.90
     console.log("Playback rate is" + video.playbackRate)
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
     console.log("Speed up")
-    video.playbackRate /= 0.95
+    video.playbackRate /= 0.90
     console.log("Playback rate is" + video.playbackRate)
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
     console.log("Skip ahead")
-    video.currentTime += 15
+    video.currentTime += 10
     if (video.currentTime >= video.duration)
         video.currentTime = 0
         console.log("Current time is" + video.currentTime)

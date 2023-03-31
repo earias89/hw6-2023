@@ -72,7 +72,7 @@ document.querySelector("#vintage").addEventListener
     console.log("I am in Old School")
     bd = document.querySelector("body")
     // if (bd.classList.contains("oldSchool")){
-        // console.log("Adding Old School")
+        console.log("Adding Old School")
         bd.classList.add("oldSchool") // remove?
     // }
     // else{
@@ -91,7 +91,7 @@ document.querySelector("#orig").addEventListener
     //     bd.classList.remove("oldSchool")
     // }
     // else{
-    //     console.log("Adding Old School")
+        console.log("Adding Old School")
         bd.classList.remove("oldSchool") // add? 
     // }
 });
